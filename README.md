@@ -14,6 +14,6 @@
 
 - [ ] Angular 101
 
-- [ ] Heap Sort
+- [ X ] Heap Sort
 
 - [ ] Merge sort
