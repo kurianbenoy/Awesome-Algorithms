@@ -10,10 +10,10 @@
 
 - [X] Pallindrome Checker
 
-- [x ] Roman Numerals
+- [x] Roman Numerals
 
 - [ ] Angular 101
 
-- [ X ] Heap Sort
+- [X] Heap Sort
 
 - [ ] Merge sort
