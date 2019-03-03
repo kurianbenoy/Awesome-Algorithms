@@ -17,3 +17,18 @@
 - [X] Heap Sort
 
 - [ ] Merge sort
+
+- [ ] Segmented trees
+
+Theory Portion mentioned [here](https://github.com/hkirat/Algorithmic-Resources)
+
+- Segmented Trees
+- Binary Search and Ternary Search
+- Trees
+- Graphs
+- Dynamic programming
+- Flow
+- Graphs
+- Maths
+- Prefix and Suffix Tries
+- Miscallaneous
