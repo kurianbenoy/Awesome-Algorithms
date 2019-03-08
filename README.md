@@ -22,13 +22,13 @@
 
 Theory Portion mentioned [here](https://github.com/hkirat/Algorithmic-Resources)
 
-- Segmented Trees
-- Binary Search and Ternary Search
-- Trees
-- Graphs
-- Dynamic programming
-- Flow
-- Graphs
-- Maths
-- Prefix and Suffix Tries
-- Miscallaneous
+- Segmented Trees [x] - Basics
+- Binary Search and Ternary Search [X]
+- Trees [X]
+- Graphs [ ]
+- Dynamic programming [ ]
+- Flow [ ]
+- Graphs [ ]
+- Maths  [ ]
+- Prefix and Suffix Tries [ ]
+- Miscallaneous [ ]
