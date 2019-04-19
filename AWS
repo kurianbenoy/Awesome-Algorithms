@@ -1,0 +1,19 @@
+
+1) Set up tasks on best suited containers - AC balanced, binbacks
+2) Monitors our tasks - how monitored by CLoudWatch alarms, CPU utilisation 30% set threshold, do action
+3) Keep tasks up 
+4) ECS update task - when no of traffic is created and revise task 
+5) Scale in/out based on traffic
+application autoscaling
+max:200% and min:50%
+6) Distribute traffic evenly to all load balanced
+
+
+APplication Loadbalancers
+
+Autoscaling groups
+- EC2, launchconfiguartion is blueprint of EC2.
+- getting autoscaling groups , by selcte 
+why CloudAlarm?
+
+launching config in ECS is easy
