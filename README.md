@@ -32,3 +32,5 @@ Theory Portion mentioned [here](https://github.com/hkirat/Algorithmic-Resources)
 - Maths  [ ]
 - Prefix and Suffix Tries [ ]
 - Miscallaneous [ ]
+
+- SOlve problems in your favourite platform
