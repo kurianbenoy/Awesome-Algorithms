@@ -56,3 +56,15 @@ Optimisation of DB for querying is build.
 Have a master slave architecture
 - Current locationDB and recommendation service
 
+15) PUBLISHER SUBSRIBER MODEL
+
+Request response cycle in normal systems have lot of disadvantages: data inconsistency
+
+Instead used Message broker like Kaffka/RabbitMQ which is great as Message queues.
+Decoupling
+Simplifies interaction and has Multiple point of failure
+Transaction guarantees
+Easily scalable
+
+Disadv: Having a consistency in the system for financial services is usually difficult.
+(transfer 1000 by 950 after deduct 50)
