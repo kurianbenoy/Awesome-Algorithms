@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
 	int T;
- 	long int n;
-	long int arr[10000];
+ 	 int n;
+	 int arr[1000];
 	cin>>T;
 	for(int i=0; i<T; i++)
 	{
@@ -17,21 +17,16 @@ int main()
 		
 		for(int i=0; i<n-1; i++)
 		{
+
 			if(arr[i] > arr[i+1])
 			{
-				arr[i] = arr[i+1];
+				cout<<arr[i+1]<<" ";
 			}
 			else
-				arr[i] = -1;
+				cout<<-1<<" ";
 		}
-		arr[n-1] = -1;
-		
-		//print the array
-		for(int i=0; i<n; i++)
-		{	
-			cout<<arr[i]<<" ";
-		}
-		cout<<"\n";
+		cout<<-1<<"\n";
 	}
 	return 0;
 }
+
