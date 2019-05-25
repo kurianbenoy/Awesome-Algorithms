@@ -13,7 +13,7 @@ void countFreq(int arr[], int n)
 
 	for(auto x:mp){
 //		cout<<x.first<<" "<<x.second<<endl;
-		if(x.second == 1)
+		if(x.second %2== 1)
 			v.push_back(x.first);		
 	}
 	sort(v.begin(), v.end());
