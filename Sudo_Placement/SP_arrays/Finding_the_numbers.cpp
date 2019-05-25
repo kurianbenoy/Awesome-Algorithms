@@ -28,7 +28,7 @@ int main()
 	int T,n;
 	int A[1000000];
 	cin>>T;
-	for(int i=0;i<n;i++)
+	for(int i=0;i<T;i++)
 	{
 		cin>>n;
 		for(int i=0;i<2*n+2;i++)
