@@ -1,3 +1,5 @@
+// Obtain string permute
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -34,6 +36,7 @@ int main() {
 	    char c[100];
 	    cin>>c;
 	    len = strlen(c);
+		sort(c,len);
 	    permute(c,0,len-1);
 	    cout<<endl;
 	    

@@ -82,7 +82,7 @@ int main()
     cin>>T;
     for(int i=0;i<T;i++)
     {
-        string str;
+        char str[100000];
         cin>>str;
         int n = str.length();
         mostFrequentWord(str, n);
