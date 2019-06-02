@@ -31,6 +31,7 @@ int main()
 		{
 			cout<<x<<" ";
 		}
+		temp.clear();
 		cout<<endl;
 	}
 /*		flag =0;
