@@ -1,3 +1,4 @@
+// The Kadanes algorithm - gfg solution
 #include<iostream>
 #include<climits>
 using namespace std;
