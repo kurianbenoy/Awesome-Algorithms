@@ -1,4 +1,3 @@
-// CPP program to implement hashing with chaining 
 #include<iostream> 
 #include <list> 
 using namespace std; 
