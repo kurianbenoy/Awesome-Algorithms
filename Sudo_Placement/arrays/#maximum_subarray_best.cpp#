@@ -8,7 +8,7 @@ int main()
 	for(int i=0;i<n;i++)
 		cin>>ar[i];
 
-	int best = INT_MIN, sum=0 ;
+	int best = INT_MIN, sum= ;
 	for(int a=0;a<n;a++){
 			sum = max(ar[a],sum+ar[a]);
 			best = max(best,sum);
