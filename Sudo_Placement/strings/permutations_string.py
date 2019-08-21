@@ -1,5 +1,5 @@
 def permutations(word):
-    if len(word)&lt;=1:
+    if len(word)==1:
         return [word]
  
     #get all permutations of length N-1
@@ -12,3 +12,8 @@ def permutations(word):
         for i in range(len(perm)+1):
             result.append(perm[:i] + char + perm[i:])
     return result
+
+if __name__=="__main__":
+	wo = input()
+	x = permutations(wo)
+	print(x)
