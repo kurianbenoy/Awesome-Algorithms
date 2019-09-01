@@ -11,6 +11,8 @@ struct Node {
 	}
 };
 
+
+
 struct LinkedList{
 	Node* head;
 	LinkedList()
