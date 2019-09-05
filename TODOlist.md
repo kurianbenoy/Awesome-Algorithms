@@ -1,6 +1,3 @@
-- Practise aptitude questions from indiabix.org
-- Complete Arden Turants essential interview prep questions 
-** Learn till class 5
 ** Apply it and make a kaggle kernel
 
 ## Thought works

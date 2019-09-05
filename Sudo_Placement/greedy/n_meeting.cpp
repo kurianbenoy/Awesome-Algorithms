@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void printMaxActivities(vector<int> S(n), vector<int> F(n), int n)
+void printMaxActivities(int S[100000], int F[100000], int n)
 {
 	int i, j;
 	i =0;
@@ -24,8 +24,8 @@ int main()
 	while(T--)
 	{
 		int n;
-		vector<int> S(n);
-		vector<int> F(n);
+		int S[100000];
+		int F[100000];
 		cin>>n;
 		for(int i=0;i<n;i++)
 			cin>>S[i];
