@@ -1,0 +1,3 @@
+[submodule "CTCI-solutions"]
+	path = CTCI-solutions
+	url = git@github.com:avidLearnerInProgress/CTCI-solutions.git
