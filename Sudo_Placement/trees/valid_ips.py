@@ -1,4 +1,4 @@
-//# https://www.geeksforgeeks.org/program-generate-possible-valid-ip-addresses-given-string/
+# https://www.geeksforgeeks.org/program-generate-possible-valid-ip-addresses-given-string/
 def is_valid(ip): 
   
     # Spliting by "." 
