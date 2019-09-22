@@ -1,60 +1,69 @@
+#include<string>
 #include<bits/stdc++.h>
+#include "algorithm"
 using namespace std;
 
-class Intreval{
-public:
-	int buy;
-	int sell;
-};
-
-int stockBuysell(int price[], int n)
+vector<int> stocks(int *arr, int n)
 {
-	if(n==1)
-		return 0;
-	int count=0;
+    vector<int> profits;
+    int buy_day = 0,sell_day = -1, i=1;
 
-	Intreval sol[n/2 +1];
-	int i=0;
+    arr[n] = arr[n-1];
+    while(i<=n)
+    {
+        if(arr[i]<= arr[buy_day])
+        {
+            buy_day = i++;
+        }
+        else if(arr[i] >= arr[sell_day] || sell_day == -1)
+        {
+            sell_day = i++;
+        }
+        if(buy_day > sell_day && sell_day >0)
+        {
+            sell_day = -1;
+        }
 
-	while(i <n-1){
-		while((i<n -1) && (price[i+1] <= price[i]))
-			i++;
+        else if ( arr[buy_day] < arr[sell_day] && (arr[i] < arr[sell_day] || i==n)) // maximum profit condition reached
+       {
+           profits.push_back(buy_day);
+           profits.push_back(sell_day);
+           buy_day = i++; // reset new buying day as the next day after you have sold the stocks
+           sell_day = -1; // selling day not known yet
+       }
+    }
 
-		if(i==n-1)
-			break;
-		sol[count].buy = i++;
-
-		while((i<n) && (price[i] >= price[i-1]))
-			i++;
-
-		sol[count].sell = i-1;
-		count++;
-	}
-
-	if(count == 0)
-		cout<<-1;
-	else{
-		for(int i=0;i<count; i++)
-			cout<<"("<<sol[i].buy<<","<<sol[i].sell<<")"<<endl;
-		}
-	return 0;
+    return profits;
 }
 
 int main()
 {
-	int T;
-	cin>>T;
-	while(T--){
-		int n;
-		int A[10000];
-		cin>>n;
-		for(int i=0;i<n;i++)
-			cin>>A[i];
+    int T;
+    cin>>T;
+    while(T--)
+    {
+        int n,*arr;
+        cin >> n;
+            
+        arr = new int[n+1];
+        
+        for (int i = 0; i < n; i++) {
+            cin >> arr[i];
+        }
+        
+        vector<int> results = stocks(arr,n);
+        
+        if(results.empty())
+        cout << "No Profit";
+        else
+        for (int i = 0; i < results.size()-1; i+=2) {
+            cout << "(" <<  results[i] << " " << results[i+1] << ")" << " ";
+        }
+        
+        cout << endl;
+     
+    }
+    
 
-		stockBuysell(A, n);
-		cout<<endl;
-		}
-		return 0;
+    return 0;
 }
-
-		
