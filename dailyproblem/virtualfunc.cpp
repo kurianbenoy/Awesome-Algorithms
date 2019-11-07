@@ -1,6 +1,6 @@
  #include<bits/stdc++.h>
  using namespace std;
- 
+#define NAME_SIZE 50 
  class Person {
      int id;// all members are private by default
      char name[NAME_SIZE];
@@ -28,6 +28,7 @@
     Person * p = new Student();
      p->aboutMe(); // prints "I am a student."
      p->addCourse("History");
+     p->addCourse("Kaggle");
      delete p;
  }
 
